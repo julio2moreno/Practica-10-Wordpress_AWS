@@ -51,14 +51,5 @@ Nos bajamos el paquete Wordpress de bitnami
  Copiamos IPv4 Public IP lo pegamos en el buscador y accedemos
  
  ## Finalizar la instancia
-En la consola de EC2. Haga clic en el botón Actions de la maquina que se quiere eliminar, vaya a Instance ``State`` y apareceran diferentes opciones ente ellas el inicio de la maquina  y clic en ``Terminate``. Seleccionamos yes 
-
-b. Se le pedirá que confirme la finalización. Seleccione Yes, Terminate (Sí, finalizar).
-
-Nota: Este proceso puede tardar varios segundos en completarse.  Una vez finalizada la instancia, el estado de la instancia cambiará a terminated (finalizada) en la consola de EC2.
-
- 
-
- 
- 
- 
+En la consola de EC2. Haga clic en el botón Actions de la maquina que se quiere eliminar, vaya a Instance ``State`` y apareceran diferentes opciones ente ellas el inicio de la maquina, apagado, reinicio y eliminicion la maquina. 
+Clic en ``Terminate``. Seleccionamos yes, este proceso dura varios minutos hasta que se finalize por completa la estancia.
