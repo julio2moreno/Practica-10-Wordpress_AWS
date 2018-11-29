@@ -16,12 +16,14 @@ Damos ``continue`` hasta la opcion 6 donde configuraremos las reglas de segurida
  
  ## Conectarse a la instancia mediante Windows
  Una vez iniciada la instancia, deberá conectarse a ella mediante SSH.
- Lo primero que tenemos que tener instalado PuTTy para poder acceder via SSh: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
+ Lo primero que tenemos que tener instalado PuTTy para poder acceder via SSh: 
+ 
+ Para descargar puTTY for Windows: https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html
  
 Tenemos que cambiar el par de claves a .ppk que es la extension de claves privadas que utiliza PuTTy.
 Por eso abrimos puTTYgen en la ventana seleccionamos ``load`` seleccionamos el archivo que anteriormente se nos ha descargado con la extension .pem, seleccionamos ``view all files`` y renombramos el archivo, a continuacion ``save private key``.
 
-En el panel de la instancias nos vamos a ``connect`` y copiamos el public DNS. En el programa puTTY ponemos lo que hemos copiado. Ejemplo:``ubuntu@ec2-52-90-146-135.compute-1.amazonaws.com``, en la barra lateral nos vamos a la opcion de ssh > Auth y ponemos la nueva clave que hemos creado.
+En el panel de la instancias nos vamos a ``connect`` y copiamos el public DNS. En el programa puTTY ponemos lo que hemos copiado. Ejemplo:``ubuntu@ec2-52-90-146-135.compute-1.amazonaws.com``, en la barra lateral nos vamos a la opcion de ``ssh > Auth`` y ponemos la nueva clave que hemos creado.
 
  ## Conectarse a la instancia mediante Mac/Linux 
  Abrimos un terminal, damos permisos al archivo donde se encuentra el par de claves y con chmod cambiamos los permisos.
@@ -35,7 +37,8 @@ En el panel de la instancias nos vamos a ``connect`` y copiamos el public DNS. E
  ## Instalación y configuración de Wordpress
  Ahora vamos a instalar y configurar un sitio Wordpress con los instaladores de Bitnami ya que automatizan la configuración de una pila de aplicaciones Bitnami en Windows, Mac OS y Linux. Cada instalador incluye todo el software necesario para ejecutarse.
 
-Nos bajamos el paquete Wordpress de bitnami
+Nos bajamos el paquete Wordpress de bitnami:
+
  ``wget https://bitnami.com/redirect/to/371173/bitnami-wordpress-4.9.8-3-linux-x64-installer.run``
  
  Cambiamos permisos para ejecutarlo, se pone en verde el archivo: 
@@ -51,5 +54,12 @@ Nos bajamos el paquete Wordpress de bitnami
  Copiamos IPv4 Public IP lo pegamos en el buscador y accedemos
  
  ## Finalizar la instancia
-En la consola de EC2. Haga clic en el botón Actions de la maquina que se quiere eliminar, vaya a Instance ``State`` y apareceran diferentes opciones ente ellas el inicio de la maquina, apagado, reinicio y eliminicion la maquina. 
-Clic en ``Terminate``. Seleccionamos yes, este proceso dura varios minutos hasta que se finalize por completa la estancia.
+En la consola de EC2. Haga clic en el botón Actions de la maquina que se quiere eliminar, vaya a ``Instance State`` y apareceran diferentes opciones ente ellas
+
+- ``start`` inicio  de la maquina.
+
+- ``stop`` apagar  de la maquina.
+
+- ``reboot`` reinicio de la maquina.
+
+- ``terminate`` eliminacion de la  maquina, este proceso dura varios minutos hasta que se finalize por completa la estancia.
