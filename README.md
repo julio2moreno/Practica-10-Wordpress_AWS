@@ -32,7 +32,7 @@ En el panel de la instancias nos vamos a ``connect`` y copiamos el public DNS. E
  
  Nos vamos al menu de instancias y en ``connect`` copiamos el public DNS y lo pegamos en el terminal.
  
- ``ssh -i "estoespruebapractica10.pem" ubuntu@ec2-52-90-146-135.compute-1.amazonaws.com``
+ ``ssh -i "archivoejemplo.pem" ubuntu@ec2-52-90-146-135.compute-1.amazonaws.com``
 
  ## Instalación y configuración de Wordpress
  Ahora vamos a instalar y configurar un sitio Wordpress con los instaladores de Bitnami ya que automatizan la configuración de una pila de aplicaciones Bitnami en Windows, Mac OS y Linux. Cada instalador incluye todo el software necesario para ejecutarse.
