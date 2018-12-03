@@ -41,6 +41,8 @@ Nos bajamos el paquete Wordpress de bitnami:
 
  ``wget https://bitnami.com/redirect/to/371173/bitnami-wordpress-4.9.8-3-linux-x64-installer.run``
  
+ En caso de que este enlaze no funcione nos vamos a  https://bitnami.com/stacks elegimos la aplicacion que queremos instalar 
+  
  Cambiamos permisos para ejecutarlo, se pone en verde el archivo: 
  
  ``sudo chmod 755 bitnami-wordpress-4.9.8-3-linux-x64-installer.run``
