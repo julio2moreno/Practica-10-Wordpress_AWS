@@ -1,6 +1,6 @@
 # Practica-10-Wordpress_AWS
 ###### Amazon Elastic Compute Cloud (Amazon EC2) es un servicio web que proporciona capacidad informática en la nube segura y de tamaño modificable. Está diseñado para simplificar el uso de la informática en la nube a escala web para los desarrolladores.
-
+###### Bitnami es una empresa que ofrece instaladores que nos permiten realizar la instalación y configuración de aplicaciones web de una forma muy sencilla.
 ## Iniciar una instancia EC2
 Lo primero que hay que hacer es abrir la consola de administración de AWS. Cuando la pantalla se cargue, escriba su nombre de usuario y contraseña para comenzar. A continuación seleccionamos Amazon EC2.
 Le damos en  ``Launch Instance`` para crear y configurar una máquina virtual.
